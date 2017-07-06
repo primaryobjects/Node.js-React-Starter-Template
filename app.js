@@ -21,7 +21,7 @@ app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 if (app.get('env') == 'development') {
-	app.locals.pretty = true;
+  app.locals.pretty = true;
 }
 
 // The "catchall" handler: for any request that doesn't
