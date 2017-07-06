@@ -36,9 +36,9 @@ http://nodebootstrapper.herokuapp.com
 
 ## Editing Pages:
 
-Edit client/src/components/Home/index.js to add your content to the Home page. The default contents include:
+Edit `client/src/components/Home/index.js` to add your content to the Home page. The default contents include:
 
-```
+```js
 class Home extends Component {
   render() {
     return (
