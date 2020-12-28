@@ -1,9 +1,9 @@
 {
   "name": "nodebootstraper",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "dependencies": {
     "express": "*",
-    "jade": "*",
+    "pug": "*",
     "stylus": "*",
     "serve-favicon": "*",
     "morgan": "*",

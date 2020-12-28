@@ -7,20 +7,23 @@ import './style.css';
 class Header extends Component {
   render() {
     return (
-      <div role="navigation" className="navbar navbar-inverse navbar-fixed-top">
-        <div className="container">
-          <div className="navbar-header">
-            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" className="navbar-toggle"><span className="icon-bar"></span><span className="icon-bar"></span><span className="icon-bar"></span></button><Link to="/" className="navbar-brand">Program Name</Link>
-          </div>
-          <div className="collapse navbar-collapse">
-            <ul className="nav navbar-nav">
-              <LiNavLink activeClassName='active' exact={true} to="/">Home</LiNavLink>
-              <LiNavLink activeClassName='active' exact={true} to="/about">About</LiNavLink>
-              <LiNavLink activeClassName='active' exact={true} to="/contact">Contact</LiNavLink>
+    <header>
+      <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div className="container-fluid">
+          <Link className="navbar-brand" to="/">Program Name</Link>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarCollapse">
+            <ul className="navbar-nav me-auto mb-2 mb-md-0">
+              <LiNavLink activeClassName='active' to="/">Home</LiNavLink>
+              <LiNavLink activeClassName='active' to="/about">About</LiNavLink>
+              <LiNavLink activeClassName='active' to="/contact">Contact</LiNavLink>
             </ul>
           </div>
         </div>
-      </div>
+      </nav>
+    </header>
     )
   }
 }

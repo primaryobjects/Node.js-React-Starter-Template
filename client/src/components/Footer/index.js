@@ -7,14 +7,11 @@ import 'bootstrap/dist/js/bootstrap.js';
 class Footer extends Component {
   render() {
     return (
-      <div className="footer">
+      <footer className="footer mt-auto py-3 bg-light">
         <div className="container">
-          <div className="footer">
-            <hr style={ { margin: "30px 0 10px 0" } } />
-            <p>&copy;&nbsp;<Link to='/'>Author</Link> 2017</p>
-          </div>
+          <span className="text-muted">&copy;&nbsp;<Link to='/author'>Author</Link> 2021</span>
         </div>
-      </div>
+      </footer>
     )
   }
 }
