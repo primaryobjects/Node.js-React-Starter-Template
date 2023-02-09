@@ -4,7 +4,10 @@ import './style.css';
 class Contact extends Component {
   render() {
     return (
-      <h1>Contact</h1>
+      <>
+        <h1>Contact</h1>
+        <p>Contact</p>
+      </>
     )
   }
 }

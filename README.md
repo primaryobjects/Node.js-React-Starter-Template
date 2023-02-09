@@ -16,6 +16,27 @@ Also available for [Pug](https://github.com/primaryobjects/Node.js-Bootstrap-Sta
 - Launch the node server by navigating to the root folder and entering: `npm start`
 - Browse to http://localhost:3000
 
+### Legacy OpenSSL Provider
+
+If you receive an error: `export NODE_OPTIONS=--openssl-legacy-provider` use the following [steps](https://stackoverflow.com/a/69699772/2596404):
+
+- Linux
+```
+export NODE_OPTIONS=--openssl-legacy-provider
+```
+
+- Windows
+
+```
+set NODE_OPTIONS=--openssl-legacy-provider
+```
+
+- PowerShell
+
+```
+$env:NODE_OPTIONS = "--openssl-legacy-provider"
+```
+
 ### Development Usage
 
 - Navigate to the folder `client` and enter: `npm start`
@@ -47,7 +68,10 @@ Edit `client/src/components/Home/index.js` to add your content to the Home page.
 class Home extends Component {
   render() {
     return (
-      <h1>Home</h1>
+      <>
+        <h1>Home</h1>
+        <p>Home</p>
+      </>
     )
   }
 }

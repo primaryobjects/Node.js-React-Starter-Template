@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-import { BrowserRouter as Router, Switch } from 'react-router-dom';
-import { Route } from 'react-router';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Home from './components/Home';
 import Header from './components/Header';
@@ -15,22 +14,22 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <BrowserRouter>
         <Header/>
 
         <main className="flex-shrink-0">
           <div className="container">
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/about" component={About} />
-              <Route path="/contact" component={Contact} />
-              <Route component={NotFound} />
-            </Switch>
+            <Routes>
+              <Route exact path="/" element={<Home/>} />
+              <Route path="/about" element={<About/>} />
+              <Route path="/contact" element={<Contact/>} />
+              <Route element={<NotFound/>} />
+            </Routes>
           </div>
         </main>
 
         <Footer/>
-      </Router>
+      </BrowserRouter>
     )
   }
 }

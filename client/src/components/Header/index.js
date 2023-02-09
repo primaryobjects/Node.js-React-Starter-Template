@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import LiNavLink from '../LiNavLink';
+import { Link, NavLink } from 'react-router-dom';
 
 import './style.css';
 
@@ -16,9 +15,9 @@ class Header extends Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <ul className="navbar-nav me-auto mb-2 mb-md-0">
-              <LiNavLink activeClassName='active' to="/">Home</LiNavLink>
-              <LiNavLink activeClassName='active' to="/about">About</LiNavLink>
-              <LiNavLink activeClassName='active' to="/contact">Contact</LiNavLink>
+              <NavLink to="/">Home</NavLink>
+              <NavLink to="/about">About</NavLink>
+              <NavLink to="/contact">Contact</NavLink>
             </ul>
           </div>
         </div>

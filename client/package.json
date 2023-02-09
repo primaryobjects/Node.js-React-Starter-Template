@@ -3,14 +3,14 @@
   "version": "0.2.0",
   "private": true,
   "dependencies": {
-    "@popperjs/core": "^2.6.0",
-    "bootstrap": "^5.0.0-beta1",
-    "react": "^17.0.1",
-    "react-create-app": "^2.0.6",
-    "react-dom": "^17.0.1",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1"
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
+    "react": "^18.2.0",
+    "create-react-app": "^5.0.1",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.8.1",
+    "react-router-dom": "^6.8.1",
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
