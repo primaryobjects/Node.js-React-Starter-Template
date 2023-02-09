@@ -16,6 +16,14 @@ Also available for [Pug](https://github.com/primaryobjects/Node.js-Bootstrap-Sta
 - Launch the node server by navigating to the root folder and entering: `npm start`
 - Browse to http://localhost:3000
 
+### Development Usage
+
+- Navigate to the folder `client` and enter: `npm start`
+
+  This will run the React client app.
+
+  You can make changes to the pages in `/client/src/components` and see them update live.
+
 ### Legacy OpenSSL Provider
 
 If you receive an error: `export NODE_OPTIONS=--openssl-legacy-provider` use the following [steps](https://stackoverflow.com/a/69699772/2596404):
@@ -36,18 +44,6 @@ set NODE_OPTIONS=--openssl-legacy-provider
 ```
 $env:NODE_OPTIONS = "--openssl-legacy-provider"
 ```
-
-### Development Usage
-
-- Navigate to the folder `client` and enter: `npm start`
-
-  This will run the React client app.
-
-  You can make changes to the pages in `/client/src/components` and see them update live.
-
-## Demo:
-
-http://nodebootstrapper.herokuapp.com
 
 ## Contents:
 
